@@ -28,7 +28,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-HelloWorld'
-      Handler: index.handler
+      Handler: lambdas.HelloWorld.index.handler
       Runtime: python3.9
       Role:
         Fn::GetAtt:
